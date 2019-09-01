@@ -8,7 +8,7 @@ AFRAME.registerComponent('markerhandler', {
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                function vibrate1() {navigator.vibrate([500]);
+                navigator.vibrate([500]);
             }
         });
 }});
