@@ -33,7 +33,16 @@
             </a-entity>
         </a-marker>
             
-             <a-entity position="1 1 0" scale ="2 2 2" text="value: WELCOME TO TOKYO!;color:black"></a-entity> 
+             <a-entity layout="type: box; columns: 1; margin: -0.05">
+  <a-entity id="line1" layout="type: line; margin: 0.5">
+    <a-entity text="value: 1"></a-entity>
+    <a-entity text="value: 1.1"></a-entity>
+  </a-entity>
+
+  <a-entity id="line2" text="value: 2"></a-entity>
+
+  <a-entity id="line3" text="value: 3"></a-entity>
+</a-entity> 
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
         <a-entity camera></a-entity>
