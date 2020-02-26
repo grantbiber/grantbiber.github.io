@@ -8,6 +8,7 @@
       
         <a-assets>
           <a-asset id="mat31" src="31.glb"></a-asset>
+          <a-asset id="mat39" src="39.glb"></a-asset>
           <a-asset id="mat51" src="51.glb"></a-asset>
         </a-assets>
       
@@ -23,7 +24,16 @@
           </a-entity> 
       </a-marker>
       
-     
+     <a-marker preset="custom" type="pattern" url="pattern-39.patt">
+          <a-entity
+                  animation-mixer
+                  gltf-model="#mat39"
+                  scale="100 100 100"
+                  position="0 0 0"
+                  rotation="0 0 0"
+                  >
+          </a-entity> 
+      </a-marker>
      
        <a-marker preset="custom" type="pattern" url="pattern-51.patt">
           <a-entity
