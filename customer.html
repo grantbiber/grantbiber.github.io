@@ -1,0 +1,64 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+ <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.5/aframe/build/aframe-ar.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs='debugUIEnabled: false; patternRatio: 0.70'>
+      
+        <a-assets>
+          <a-asset id="cust1" src="c1.glb"></a-asset>
+          <a-asset id="cust2" src="c2.glb"></a-asset>
+          <a-asset id="cust3" src="c3.glb"></a-asset>
+          <a-asset id="cust4" src="c4.glb"></a-asset>
+        </a-assets>
+      
+      
+      <a-marker preset="custom" type="pattern" url="pattern-c1.patt">
+          <a-entity
+                  animation-mixer
+                  gltf-model="#cust1"
+                  scale="100 100 100"
+                  position="0 0 0"
+                  rotation="0 0 0"
+                  >
+          </a-entity> 
+      </a-marker>
+      
+     <a-marker preset="custom" type="pattern" url="pattern-c2.patt">
+          <a-entity
+                  animation-mixer
+                  gltf-model="#cust2"
+                  scale="100 100 100"
+                  position="0 0 0"
+                  rotation="0 0 0"
+                  >
+          </a-entity> 
+      </a-marker>
+     
+       <a-marker preset="custom" type="pattern" url="pattern-c3.patt">
+          <a-entity
+                  animation-mixer
+                  gltf-model="#cust3"
+                  scale="100 100 100"
+                  position="0 0 0"
+                  rotation="0 0 0"
+                  >
+          </a-entity> 
+      </a-marker>
+     
+      <a-marker preset="custom" type="pattern" url="pattern-c4.patt">
+          <a-entity
+                  animation-mixer
+                  gltf-model="#cust4
+                  scale="100 100 100"
+                  position="0 0 0"
+                  rotation="0 0 0"
+                  >
+          </a-entity> 
+      </a-marker>
+      
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
