@@ -5,11 +5,12 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-      <a-marker preset="pattern" url="pattern-cems.patt">
-        <a-text font="sourcecodepro" position="0 1 0" wrap-count="17" rotation="0 -90 0" color="yellow" value="Please hire me 2!" align="center"></a-text>
+      <a-marker preset="pattern" src="pattern-dino.patt">
+        <a-text font="sourcecodepro" position="0 0 -1" wrap-count="25" rotation="-90 0 0" color="yellow" value="CEMS, please hire me! \t \t ¡Por favor contratame! \t \t Per favore, assumimi!" align="center"></a-text>
         <a-entity
-          position="0 -90 0"
-          scale="0.05 0.05 0.05"
+          position="0 0 2"
+          scale="0.1 0.1 0.1"
+          rotation="-90 0 0"
           gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
         ></a-entity>
       </a-marker>
