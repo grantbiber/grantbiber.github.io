@@ -4,7 +4,7 @@
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; patternRatio: 0.75' renderer='logarithmicDepthBuffer: true;precision:low'>
+    <a-scene embedded arjs="patternRatio: 0.75">
       <a-marker preset="pattern" src="pattern-cems2.patt">
         <a-text font="sourcecodepro" position="0 0 -1" wrap-count="17" rotation="-90 0 0" color="yellow" value="CEMS, please hire me!\t ¡Por favor contratame!\t Per favore, assumimi!" align="center"></a-text>
         <a-entity
